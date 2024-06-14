@@ -1,0 +1,64 @@
+.container{
+    display: flex;
+    
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    width: 150px;
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide any overflowing content */
+    margin: 10px;
+    
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 5px;
+    /* Add other styling for content (text, buttons, etc.) */
+}
+p{
+    font-weight: bolder;
+    background-color: crimson;
+    border: 2px solid crimson;
+    width: 85px;
+    border-top-right-radius: 50PX;
+    border-bottom-right-radius: 50PX;
+}
+
+img {
+    height: 45px;
+    width: 90px;
+    
+}
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .container{
+         display: flex;
+         flex-direction: column;
+    }
+    .card {
+        width: 250px;
+    }
+    
+}
+@media (min-width: 481px) and (max-width: 1200px) {
+    .container{
+        display: flex;
+         flex-direction: column-reverse;
+    }
+    .card{
+        width: 350px;
+    }
+}
